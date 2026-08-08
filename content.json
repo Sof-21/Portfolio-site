@@ -1,0 +1,217 @@
+{
+  "meta": {
+    "name": "Sofonias Aberra",
+    "initials": "SA",
+    "title": "AWS Cloud Engineer",
+    "location": "Warsaw, Poland",
+    "email": "sofoniasaberra5@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/sofonias22/",
+    "github": "https://github.com/Sof-21",
+    "resumeUrl": "SofoniasResume2024.pdf",
+    "photoUrl": "Images/SiteImages/Hero.jpg"
+  },
+  "hero": {
+    "eyebrow": "Welcome",
+    "headingPre": "Hi, I'm ",
+    "headingAccent": "Sofonias",
+    "headingPost": ",",
+    "roles": [
+      "AWS Cloud Engineer(Jr)",
+      "L3 Support Specialist",
+      "Platform Observability Engineer"
+    ],
+    "subtitle": "I design, deploy and support cloud infrastructure on AWS - from IAM and networking to serverless and static hosting. Simple, secure, and built to scale.",
+    "stats": [
+      {
+        "value": "5+",
+        "label": "Years in Tech"
+      },
+      {
+        "value": "4",
+        "label": "Companies"
+      },
+      {
+        "value": "1",
+        "label": "AWS Certification"
+      }
+    ]
+  },
+  "about": {
+    "eyebrow": "About",
+    "heading": "Every deployment begins with a solid foundation",
+    "paragraphs": [
+      "I'm a Software Engineering graduate with experience in IT support, troubleshooting, and systems administration. I've worked in L2/L3 support and IT specialist roles, helping organizations maintain reliable, efficient technology operations across networking, system administration, and databases.",
+      "I'm focused on cloud engineering, DevOps, and automation, working with AWS, Kubernetes, Docker, and CI/CD pipelines. Using tools like Prometheus, Grafana, and Zabbix, I help keep systems reliable and scalable. I'm also curious about emerging tech, especially AI, and how it can improve the way we work.",
+      "Outside of work, you'll probably find me watching the latest tech reviews, gaming, or hitting the gym. I believe in balancing professional growth with personal passions, and I'm always excited to connect with people who share the same drive for learning, innovation, and creativity."
+    ]
+  },
+  "skills": {
+    "eyebrow": "My Skills",
+    "heading": "Tools of the trade",
+    "aws": [
+      {
+        "name": "EC2",
+        "icon": "server"
+      },
+      {
+        "name": "S3",
+        "icon": "bucket"
+      },
+      {
+        "name": "Lambda",
+        "icon": "bolt"
+      },
+      {
+        "name": "IAM",
+        "icon": "shield"
+      },
+      {
+        "name": "VPC",
+        "icon": "network"
+      },
+      {
+        "name": "RDS",
+        "icon": "database"
+      },
+      {
+        "name": "CloudWatch",
+        "icon": "gauge"
+      },
+      {
+        "name": "Route 53",
+        "icon": "globe"
+      },
+      {
+        "name": "DynamoDB",
+        "icon": "grid"
+      },
+      {
+        "name": "ECS",
+        "icon": "container"
+      },
+      {
+        "name": "SNS/SQS",
+        "icon": "bell"
+      }
+    ],
+    "tools": [
+      {
+        "name": "Terraform",
+        "icon": "stack"
+      },
+      {
+        "name": "Docker",
+        "icon": "box"
+      },
+      {
+        "name": "Linux",
+        "icon": "terminal"
+      },
+      {
+        "name": "Git",
+        "icon": "branch"
+      },
+      {
+        "name": "Python",
+        "icon": "code"
+      },
+      {
+        "name": "Bash",
+        "icon": "prompt"
+      },
+      {
+        "name": "GitHub Actions",
+        "icon": "loop"
+      }
+    ]
+  },
+  "experience": {
+    "eyebrow": "Experience",
+    "heading": "Where I've worked",
+    "items": [
+      {
+        "role": "L3 Support Analyst",
+        "company": "Amelco",
+        "dates": "Aug 2022 — Present",
+        "points": [
+          "Experienced L3 Support Analyst specializing in supporting sports betting and trading software platforms. Skilled in system monitoring, rapid issue resolution, and Root Cause Analysis, with a strong focus on driving operational efficiency and ensuring seamless client support.",
+          "Proficient in querying PostgreSQL and Snowflake databases, analyzing system logs and metrics to identify issue patterns, and using tools like Prometheus, Grafana, and Loki to maintain server and software health across cloud environments.",
+          "Hands-on with modern infrastructure, continually building AWS cloud expertise in my free time alongside working with Docker and Kubernetes container orchestration, SolarWinds, ClickUp, Confluence, and Git/GitHub."
+        ]
+      },
+      {
+        "role": "L2 Support Analyst(Part-time)",
+        "company": "Societe Generale",
+        "dates": "Oct 2025 — June 2026",
+        "points": [
+          "Experienced IT Application Support Specialist specializing in L2 functional support for complex banking and financial applications. I take full ownership of production incidents from initial report to resolution, with a strong focus on back-office operations including payments, settlements, and reconciliations.",
+          "I excel at dissecting complex functional issues, analyzing transactional flows, and resolving calculation discrepancies. Leveraging Web Automation with Playwright, application log parsing, database queries, and ITIL best practices (Incident, Problem, and Change Management), I systematically trace root causes, eliminate recurring bugs, and propose permanent process improvements",
+          "A confident communicator adept at bridging the gap between non-technical global stakeholders and core IT engineering teams. Passionate about building clear documentation, sharing knowledge, and ensuring seamless operational support in fast-paced international environments."
+        ]
+      },
+      {
+        "role": "Technical Support Specialist",
+        "company": "Diebold Nixdorf",
+        "dates": "Sep 2021 — Aug 2022",
+        "points": [
+          "Delivered end-to-end technical support across hardware, software, networking, and payment terminals for BP Gas Stations across North America, Australia, and South Africa, maintaining maximum uptime for mission-critical retail systems.",
+          "Driven incident management and user access administration, efficiently resolving complex queries involving VPN connectivity, router configurations, printer/scanner faults, and account security protocols across omni-channel support systems.",
+          "Proactively identified and mitigated operational risks through early troubleshooting while collaborating with external partners and third-party vendors to fast-track technical issue escalation and resolution."
+        ]
+      },
+      {
+        "role": "Quality Assurance Engineer",
+        "company": "Testronic",
+        "dates": "Jan 2021 — Aug 2021",
+        "points": [
+          "Executed end-to-end functional, regression, and localization testing across Digital TV platforms and enterprise software, driving the complete bug lifecycle from discovery to verification.",
+          "Partnered directly with development teams during agile debugging sessions to isolate root causes, leveraging light front-end development and real-time server health monitoring to accelerate issue resolution.",
+          "Authored comprehensive test plans, defect reports, and technical documentation to streamline cross-functional alignment and ensure compliance with strict certification standards."
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "eyebrow": "Portfolio",
+    "heading": "Featured projects",
+    "comingSoon": true,
+    "items": []
+  },
+  "clients": {
+    "eyebrow": "Clients",
+    "heading": "Companies I've worked with",
+    "items": [
+      {
+        "name": "Amelco",
+        "initials": "AM",
+        "logoUrl": "Images/Logos/amelco.png"
+      },
+      {
+        "name": "Societe Generale",
+        "initials": "SG",
+        "logoUrl": "Images/Logos/societe-generale.png"
+      },
+      {
+        "name": "Testronic",
+        "initials": "TR",
+        "logoUrl": "Images/Logos/testronic.png"
+      },
+      {
+        "name": "Diebold",
+        "initials": "DN",
+        "logoUrl": "Images/Logos/diebold-nixdorf.png"
+      }
+    ]
+  },
+  "certifications": {
+    "eyebrow": "Certificates",
+    "heading": "Verified credentials",
+    "comingSoon": true,
+    "items": []
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "heading": "Let's connect",
+    "subtitle": "The easiest way to reach me right now is through LinkedIn or email — links below."
+  }
+}
