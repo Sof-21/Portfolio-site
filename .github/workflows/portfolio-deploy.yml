@@ -6,6 +6,10 @@ on:
 jobs:
   Deploy-to-s3:
     runs-on: ubuntu-latest
+    
+    # Prevent accidental deployments if someone triggers this from a non-main branch
+    if: github.ref == 'refs/heads/main'
+    
     steps:
       - name: checkout git repo
         uses: actions/checkout@v4
