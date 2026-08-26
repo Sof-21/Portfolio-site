@@ -1,0 +1,4 @@
+name: Deploy static portfolio to aws s3
+
+on:
+  workflow_dispatch: 
