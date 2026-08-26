@@ -2,3 +2,26 @@ name: Deploy static portfolio to aws s3
 
 on:
   workflow_dispatch: 
+
+jobs:
+  Deploy-to-s3:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout git repo
+        uses: actions/checkout@v4
+
+      - name: Configure Aws credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-secret-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: eu-north-1
+
+      - name: Sync files to S3 bucket
+        run: |
+        aws s3 sync . s3://my-website-bucket \
+          --exclude ".git/*" \
+          --exclude ".github/*" \
+          --exclude "README.md" \
+          --delete
+          
