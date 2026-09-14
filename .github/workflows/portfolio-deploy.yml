@@ -29,3 +29,8 @@ jobs:
             --exclude "README.md" \
             --delete
             
+      - name: Invalidate Cloudfront Cache
+        run: |
+          aws cloudfront create-invalidation \
+          --distribution-id EV6VBOH50BPMP \
+          --paths '/*'
