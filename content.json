@@ -192,7 +192,24 @@
           "GitHub Actions"
         ],
         "link": "https://github.com/Sof-21/Portfolio-site",
-        "imageUrl": "projects/portfolio.jpg"
+        "imageUrl": "/projects/portfolio.jpg"
+      },
+      {
+        "title": "Highly Available AWS Web Application",
+        "description": "A Terraform-managed, highly available AWS web application demonstrating multi-AZ architecture, network segmentation, secure administration, and repeatable infrastructure deployment.",
+        "tech": [
+          "Terraform",
+          "VPC",
+          "Public/private subnets",
+          "Multiple AZs",
+          "NAT Gateway",
+          "ALB",
+          "Security groups",
+          "Bastion host",
+          "GitHub Actions"
+        ],
+        "link": "https://github.com/Sof-21/Highly_Available_AWS_Web_Deployment",
+        "imageUrl": "/projects/architecture.png"
       }
     ]
   },
