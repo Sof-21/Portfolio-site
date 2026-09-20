@@ -586,7 +586,10 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 .project-card:hover { transform: translateY(-4px); border-color: var(--accent); }
 .project-card__visual {
+  display: block;
+  cursor: pointer;
   height: 140px;
+  max-height: 140px;
   border-radius: var(--radius-sm);
   background:
     radial-gradient(circle at 20% 30%, var(--accent-dim), transparent 40%),
@@ -606,6 +609,17 @@ ul { margin: 0; padding: 0; list-style: none; }
     linear-gradient(90deg, var(--border) 1px, transparent 1px);
   background-size: 24px 24px;
   opacity: 0.4;
+}
+.project-card__visual--image::after { display: none; }
+.project-card__visual img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  display: block;
 }
 .project-card__title {
   font-family: var(--font-display);
@@ -1279,7 +1293,7 @@ window.PORTFOLIO_DATA = {
       div.className = 'project-card reveal';
       div.style.transitionDelay = `${i * 80}ms`;
       div.innerHTML = `
-        <div class="project-card__visual" aria-hidden="true"></div>
+        <a class="project-card__visual" href="${item.link}" target="_blank" rel="noopener" aria-label="View ${item.title} on GitHub"></a>
         <div class="project-card__title">${item.title}</div>
         <p class="project-card__desc">${item.description}</p>
         <div class="project-card__tags">
@@ -1287,6 +1301,23 @@ window.PORTFOLIO_DATA = {
         </div>
         <a class="project-card__link" href="${item.link}" target="_blank" rel="noopener">View on GitHub &rarr;</a>
       `;
+
+      if (item.imageUrl) {
+        const visual = div.querySelector('.project-card__visual');
+        visual.classList.add('project-card__visual--image');
+        const img = document.createElement('img');
+        img.src = item.imageUrl;
+        img.alt = `${item.title} preview`;
+        img.loading = 'lazy';
+        img.onerror = () => {
+          // Broken/missing image — fall back to the plain decorative visual
+          // instead of showing a broken image icon.
+          visual.classList.remove('project-card__visual--image');
+          img.remove();
+        };
+        visual.appendChild(img);
+      }
+
       projEl.appendChild(div);
     });
 
